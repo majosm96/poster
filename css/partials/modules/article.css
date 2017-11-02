@@ -1,0 +1,9 @@
+.single-header-cat {
+  margin: 3rem;
+  display: block;
+  text-align: center;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  will-change: transform,opacity;
+  -webkit-font-smoothing: antialiased !important;
+}

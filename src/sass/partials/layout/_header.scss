@@ -1,0 +1,8 @@
+.logo {
+    width: 60px;
+    margin: $space-base 0 0 0;
+
+     @include query(975px) {
+        margin: $space-base 0 0 $space-medium;
+    }
+}

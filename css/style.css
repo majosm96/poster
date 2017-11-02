@@ -1,0 +1,498 @@
+.hidden {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font: 1em/1.5 "Nunito", sans-serif;
+  width: 100%;
+  height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  position: relative;
+  background-color: #b8f1f4;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main,
+details,
+menu {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.h2-section {
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+h3,
+.h-h3 {
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #333333;
+  font-family: "VT323", serif;
+}
+
+.h-h4 {
+  font-size: 1.25rem;
+}
+
+.h-section {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.h-page {
+  color: inherit;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+q {
+  font-style: italic;
+}
+
+p,
+li,
+dd,
+dt {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #4d4d4d;
+  line-height: 30px;
+}
+
+a {
+  background-color: transparent;
+  border-bottom: 1px solid #03a3bd;
+  color: #000;
+  font-weight: 800;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+  color: #03a3bd;
+}
+
+a:hover,
+a:focus {
+  border: 0;
+  text-decoration: none;
+}
+
+.white-link {
+  color: #fff;
+  -webkit-tap-highlight-color: white;
+}
+
+.a-title {
+  background-color: transparent;
+  border-bottom: 1px solid #000;
+  color: #000;
+  font-weight: 100;
+  -webkit-text-decoration-skip: objects;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  text-decoration: none;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  will-change: transform,opacity;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+th,
+td {
+  padding: 5px 10px;
+}
+
+th {
+  color: #fff;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+picture img {
+  height: auto;
+  max-width: 100%;
+}
+
+div.rwd-media {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+}
+
+div.rwd-media iframe,
+div.rwd-media video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  border-style: none;
+  -webkit-filter: saturate(1.2);
+          filter: saturate(1.2);
+  width: 100%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+.btn a {
+  border: none;
+}
+
+.btn p {
+  margin: 0;
+}
+
+.btn-principal {
+  background: #ffb0b6;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+.btn-principal:hover {
+  background: #f28f9c;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn-principal__replay {
+  float: right;
+  margin: 1rem 0 0 0;
+}
+
+@media only screen and (min-width: 975px) {
+  .btn-principal__replay {
+    margin: 1rem 2.25rem 0 0;
+  }
+}
+
+.info-card {
+  background-color: #f4f3c1;
+  padding: 1rem 1rem;
+  display: inline-block;
+  color: #4d4d4d;
+  width: 100%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  margin-right: 1rem;
+}
+
+.left:before {
+  content: "";
+  display: block;
+  background: center no-repeat url(../img/star.png);
+  width: 43px;
+  height: 30px;
+  background-size: 90%;
+  margin-right: 10px;
+  float: left;
+}
+
+.right:before {
+  content: "";
+  display: block;
+  background: center no-repeat url(../img/score.png);
+  width: 43px;
+  height: 30px;
+  background-size: 90%;
+  margin-right: 10px;
+  float: left;
+}
+
+.game {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style: none;
+  padding: 0;
+}
+
+.cards {
+  width: 25%;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto;
+  margin: 9px 0;
+}
+
+@media only screen and (min-width: 380px) {
+  .cards {
+    width: 23%;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .cards {
+    width: 20%;
+    margin: 15px 0;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .cards {
+    width: 20%;
+  }
+}
+
+.card-fruit {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 450px) {
+  .card-fruit {
+    width: 62%;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .card-fruit {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .card-fruit {
+    width: 56%;
+  }
+}
+
+.card-empty {
+  width: 20%;
+  margin: 1rem;
+}
+
+.logo {
+  width: 60px;
+  margin: 1rem 0 0 0;
+}
+
+@media only screen and (min-width: 975px) {
+  .logo {
+    margin: 1rem 0 0 2.25rem;
+  }
+}
+
+.l-content {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+  .l-content {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .l-content {
+    width: 65%;
+  }
+}
+
+.l-group:before, .l-group:after {
+  content: " ";
+  display: table;
+}
+
+.l-group:after, .l-group:after {
+  clear: both;
+}
+
+.group {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.group:before, .group:after {
+  content: " ";
+  display: table;
+}
+
+.group:after, .group:after {
+  clear: both;
+}
+
+.section-wrap {
+  padding: 1rem 1rem;
+}

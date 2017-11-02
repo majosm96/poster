@@ -1,0 +1,133 @@
+.info {
+    p {
+        margin: 0.2rem;
+        font-size: 0.5rem;
+        line-height: 2.4;
+    }
+
+    @include query(700px) {
+        p {
+            margin: 10px;
+            font-size: 0.6rem;
+        }
+    }
+
+    @include query(1300px) {
+         margin-left: -175px;
+    }
+}
+
+.poster-art {
+     @include query(1300px) {
+         margin-right: -175px;
+    }
+}
+
+.info__tiles {
+    margin: 0;
+    position: relative;
+
+    @include query(700px) {
+        margin: 0.8rem;
+    }
+}
+
+.info--border {
+    border-bottom: 1px solid #000;
+}
+
+.info__mates {
+    border-top: 1px solid #000;
+}
+
+
+.info__time {
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+.info__album-new {
+    width: 50%;
+    float: left;
+}
+
+.info__album-web {
+     width: 50%;
+     float: right;
+     text-align: right;
+
+    @include query(630px) {
+        width: 30%;
+    }
+
+    @include query(650px) {
+        margin-right: $space-base;
+    }
+}
+
+.tame-art__img {
+    margin: 0 auto;
+    background-image: url(../img/bg.jpg);
+    background-size: 50%;
+
+    @include query(650px) {
+        height: 100vh;
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+    }
+}
+
+.main-wrapper {
+    @include query(650px) {
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        -webkit-align-items: center; 
+    }
+}
+
+.poster {
+    width: 100%;
+
+    @include query(650px) {
+        flex: 1 auto;
+        width: 50%;
+    }
+}
+
+.loading {
+	-webkit-animation: rotation 30s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+.info__tameimpala:after {
+    content: '{AUS}';
+    font-size: 10px;
+    position: absolute;
+    top: 6px;
+
+    @include query(700px) {
+        font-size: 12px;
+    }
+    
+}
+
+.info__support:after {
+    content: '{NO}';
+    font-size: 6px;
+    position: absolute;
+    top: 0;
+
+    @include query(700px) {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,38 @@
+.info-card {
+    background-color: $yellow;
+    padding: $space-base $space-base;
+    display: inline-block;
+    color: $font-color-base;
+    width: 100%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    margin-right: $space-base;
+}
+
+.left:before {
+    content: "";
+    display: block;
+    background: center no-repeat url(../img/star.png);
+    width: 43px;
+    height: 30px;
+    background-size: 90%;
+    margin-right: 10px;
+    float: left;
+}
+
+.right:before {
+    content: "";
+    display: block;
+    background: center no-repeat url(../img/score.png);
+    width: 43px;
+    height: 30px;
+    background-size: 90%;
+    margin-right: 10px;
+    float: left;
+}

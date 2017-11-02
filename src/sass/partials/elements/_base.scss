@@ -1,0 +1,59 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font: 1em/1.5 $font-family-base; // 1
+  width: 100%;
+  height: 100%;
+  -ms-text-size-adjust: 100%; // 3
+  -webkit-text-size-adjust: 100%; // 3
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Remove the margin in all browsers (opinionated).
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+// Add the correct display in IE 9-.
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main,
+details,
+menu {
+  display: block;
+}
+
+// Add the correct margin in IE 8.
+figure {
+  margin: 1em 40px;
+}
+
+// Add the correct display in all browsers.
+summary {
+  display: list-item;
+}
+
+// Add the correct display in IE 9-.
+canvas {
+  display: inline-block;
+}
+
+// Add the correct display in IE.
+template {
+  display: none;
+}

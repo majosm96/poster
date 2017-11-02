@@ -1,0 +1,13 @@
+// Normalize
+// ==========================================================================
+// Remove the border on images inside links in IE 10-.
+img {
+    border-style: none;
+    filter: saturate(1.2);
+    width: 100%;
+}
+
+// Hide the overflow in IE.
+svg:not(:root) {
+    overflow: hidden;
+}
