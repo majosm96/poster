@@ -1,0 +1,20 @@
+.btn {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(0, 0, 0);
+  border: 1px solid #000;
+ }
+ 
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  border: 1px solid #000;
+  color: #fff;
+  background-image: linear-gradient(to right, #7bdbf3 10%, #0ed8c7 20%, #4b0e5c 30%, #b213e2 45%, #f50655 60%,
+   #f14640 90%, #40f1cb 95%);
+}
+
+

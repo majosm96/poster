@@ -6,12 +6,19 @@ a {
     border-bottom: 1px solid $accent-color;
     color: #000;
     font-weight: 800;
-    font-size: 0.5rem;
+    font-size: 0.1rem;
     text-decoration: none;
     letter-spacing: 3px;
     font-family: $font-family-base;
     text-transform: uppercase;
-    color: linear-gradient(90deg, var(--a1, rgb(233, 5, 146)), var(--c2, rgb(122, 10, 122)) 51%, var(--a1, rgb(61, 12, 240))) var(--x, 0)/200%;
+
+    @include query(600px) {
+        font-size: 0.5rem;
+    }
+
+    @include query(750px) {
+        font-size: 0.7rem;
+    }
 }
 
 // Remove the outline on focused links when they are also active or hovered
@@ -35,17 +42,3 @@ a:focus {
 }
 
 
-.btn {
-    color: linear-gradient(90deg, var(--a1, rgb(233, 5, 146)), var(--c2, rgb(122, 10, 122)) 51%, var(--a1, rgb(61, 12, 240))) var(--x, 0)/200%;
-    transition: 0.5s;
-    outline: 0;
-
-    &:hover {
-      --x: 100%;
-    }
-  }
-
-  .btn-1 {
-    --a1: rgb(99, 9, 79);
-    --c2: rgb(241, 70, 79);
-  }
