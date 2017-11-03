@@ -49,7 +49,13 @@
     <!--Art section-->
     <section class="poster-art group poster">
       <div class="tame-art__img">
-        <img class="loading" src="img/test02.png " alt="tame-art">
+        <picture>
+          <source media="(max-width: 500px)" srcset="img/circle-small.png">
+          <source media="(max-width: 799px)" srcset="img/circle-med.png">
+          <source media="(min-width: 1200px)" srcset="img/circle-big.png">
+          <img class="loading" src="img/circle-big.png" alt="Tame impala art">
+        </picture>
+        <!-- <img class="loading" src="img/test02.png " alt="tame-art"> -->
       </div>
     </section>
   </main>
